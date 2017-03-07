@@ -1,5 +1,5 @@
-<?php
-
+<?php error_reporting(E_ALL);
+ini_set('display_errors', 1);
 $user_name = $_POST['user_name'];
 $user_password=$_POST['user_password'];
  include("connection.php");
