@@ -9,7 +9,7 @@ $user_course=$_POST['user_course'];
 
 include("connection.php");
 $qry="insert into user(user_fname,user_lname,user_mobile,user_email,user_password,user_course) value('".$user_fname."','".$user_lname."','".$user_mobile."','".$user_email."','".$user_password."','".$user_course."')";
-$res=mysqli_query($qry);
+$res=mysqli_query($con,$qry);
 
 
 ?>

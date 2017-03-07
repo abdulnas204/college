@@ -6,7 +6,7 @@ if(isSet($_POST['user_mobile']))
 $user_mobile = $_POST['user_mobile'];
  include("connection.php");
 
-$sql_check = mysqli_query("select user_mobile from user where user_mobile='".$user_mobile."'") or die(mysqli_error());
+$sql_check = mysqli_query($con,"select user_mobile from user where user_mobile='".$user_mobile."'") or die(mysqli_error($con));
 
 if(mysqli_num_rows($sql_check))
 {

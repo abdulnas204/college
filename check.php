@@ -6,7 +6,7 @@ if(isSet($_POST['user_email']))
 $user_email = $_POST['user_email'];
  include("connection.php");
 
-$sql_check = mysqli_query("select user_email from user where user_email='".$user_email."'") or die(mysqli_error());
+$sql_check = mysqli_query($con,"select user_email from user where user_email='".$user_email."'") or die(mysqli_error($con));
 
 if(mysqli_num_rows($sql_check))
 {
