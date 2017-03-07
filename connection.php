@@ -2,7 +2,7 @@
 
 $servername = 'localhost';
 $dbusername = 'root';
-$dbpassword = 'bitnami';
+$dbpassword = '';
 $dbname = 'college_management';
 $con = mysqli_connect($servername,$dbusername,$dbpassword);
 if(!$con)
