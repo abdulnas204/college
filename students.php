@@ -75,7 +75,7 @@ if($_SESSION["user_name"]){
                         <tbody>
 							<?php
 							$qry="select * from user";
-							$res=mysql_query($qry);
+							$res=mysqli_query($qry);
 							while($row=mysql_fetch_array($res))
 							{
 							?>
