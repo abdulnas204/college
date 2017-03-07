@@ -4,12 +4,12 @@ $servername = 'localhost';
 $dbusername = 'root';
 $dbpassword = 'bitnami';
 $dbname = 'college_management';
-$con = mysql_connect($servername,$dbusername,$dbpassword);
+$con = mysqli_connect($servername,$dbusername,$dbpassword);
 if(!$con)
 {
-  die('Could not Connected'.mysql_errors());
+  die('Could not Connected'.mysqli_errors());
   
 }
-mysql_select_db($dbname,$con);
+mysqli_select_db($dbname,$con);
 
 ?>
