@@ -7,9 +7,9 @@ $dbname = 'college_management';
 $con = mysqli_connect($servername,$dbusername,$dbpassword);
 if(!$con)
 {
-  die('Could not Connected'.mysqli_errors());
+  die('Could not Connected'.mysqli_errors($con));
   
 }
-mysqli_select_db($dbname,$con);
+mysqli_select_db($con,$dbname);
 
 ?>
