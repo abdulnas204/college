@@ -4,7 +4,7 @@ $user_name = $_POST['user_name'];
 $user_password=$_POST['user_password'];
  include("connection.php");
 
- $sql_check = mysqli_query("SELECT * FROM `login` WHERE user_name = '".$user_name."' AND user_password = '".$user_password."' ") or die(mysqli_error());
+ $sql_check = mysqli_query($con,"SELECT * FROM `login` WHERE user_name = '".$user_name."' AND user_password = '".$user_password."' ") or die(mysqli_error($con));
 
 if(mysqli_num_rows($sql_check))
 {
