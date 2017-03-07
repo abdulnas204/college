@@ -4,11 +4,11 @@ $user_name = $_POST['user_name'];
 $user_password=$_POST['user_password'];
  include("connection.php");
 
- $sql_check = mysql_query("SELECT * FROM `login` WHERE user_name = '".$user_name."' AND user_password = '".$user_password."' ") or die(mysql_error());
+ $sql_check = mysqli_query("SELECT * FROM `login` WHERE user_name = '".$user_name."' AND user_password = '".$user_password."' ") or die(mysqli_error());
 
-if(mysql_num_rows($sql_check))
+if(mysqli_num_rows($sql_check))
 {
-	 while($result = mysql_fetch_array($sql_check))
+	 while($result = mysqli_fetch_array($sql_check))
 		 {
 session_start();
 $_SESSION["user_name"] = $result["user_name"];
