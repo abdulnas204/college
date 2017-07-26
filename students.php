@@ -115,7 +115,7 @@ if($_SESSION["user_name"]){
     </section><!-- End main_content -->
 
 <footer>
-<div id="copy_right">© Junction Tech</div>
+<div id="copy_right">© Junction Tech Other Product- <a target="_blank" href="https://www.zeroerp.com">School Management Software</a></div>
 </footer>
 
 <div id="toTop">Back to top</div>
